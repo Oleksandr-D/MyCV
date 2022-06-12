@@ -1,0 +1,14 @@
+ @import'../../shared/styles/_variables.scss';
+
+
+ header{
+   color: $main-color;
+   font-family: $main-font;
+ }
+
+ul {
+   display: inline-flex;
+   li{
+      padding: 20px 25px;
+   }
+}

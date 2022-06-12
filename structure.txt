@@ -5,6 +5,7 @@ app/
    pages/
        home.component
        contact.component
+       about.component
    shared/
        styles/
            _variables.scss
