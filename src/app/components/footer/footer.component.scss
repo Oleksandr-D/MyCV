@@ -1,0 +1,13 @@
+@import'../../shared/styles/_variables.scss';
+
+footer {
+  border-top: 4px solid #ffffff;
+  background-color: $main-color;
+
+  div {
+    color: #ffffff;
+    height: 100px;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
