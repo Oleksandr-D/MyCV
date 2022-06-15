@@ -1,13 +1,23 @@
 @import'../../shared/styles/_variables.scss';
 
 footer {
-  border-top: 4px solid #ffffff;
+  // height: 10vh;
   background-color: $main-color;
-
-  div {
+ font-family: $main-fontBold;
+ padding: 20px 50px;
+ display: flex;
+ div{
+  width: 30%;
+ }
+  p {
     color: #ffffff;
-    height: 100px;
-    text-align: center;
-    margin-top: 40px;
+   
   }
 }
+
+
+.social{
+width: 50%
+}
+
+

@@ -3,10 +3,17 @@
    src: url('../../../assets/fonts/Jura/static/Jura-SemiBold.ttf');
 }
 @font-face{
-   font-family: 'Neucha';
-   src:url('../../../assets/fonts/Neucha/Neucha-Regular.ttf');
+   font-family: 'Jura-bold';
+   src: url('../../../assets/fonts/Jura/static/Jura-Bold.ttf');
 }
+@font-face{
+   font-family: 'Montserrat_Alternates';
+   src:url('../../../assets/fonts/Montserrat_Alternates/MontserratAlternates-ExtraBold.ttf');
+}
+
+
 
 $main-color: rgb(19, 19, 19);
 $main-font:'Jura';
-$sec-font:'Neucha';
+$main-fontBold:'Jura-bold';
+$sec-font:'Montserrat_Alternates';
