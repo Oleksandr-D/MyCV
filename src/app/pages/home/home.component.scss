@@ -7,6 +7,8 @@
   position: relative;
   padding: 20px 50px;
   display: flex;
+  color:$main-text-color;
+  font-family: $main-font;
 }
 
 .align-banner {
@@ -28,11 +30,6 @@
 .banner-info {
   width: 50%;
   padding: 100px 20px;
-}
-
-.banner-info {
-  color: rgb(255, 255, 255);
-  font-family: $main-font;
 }
 
 h1 {
@@ -63,29 +60,29 @@ span a {
   transform-style: preserve-3d;
   transform: translateZ(-25px);
   transition: transform .25s;
-  font-family: $main-fontBold, sans-serif;
+  font-family: $main-fontBold;
 }
 
 span a:before,
 span a:after {
   position: absolute;
   content: "See my work";
-  height: 55px;
+  height: 60px;
   width: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px solid rgb(255, 255, 255);
+  border: 5px solid $main-text-color;
 }
 
 span a:before {
   color: $main-color;
-  background: rgb(255, 255, 255);
+  background:$main-text-color;
   transform: rotateY(0deg) translateZ(25px);
 }
 
 span a:after {
-  color: rgb(255, 255, 255);
+  color:$main-text-color;
   transform: rotateX(90deg) translateZ(25px);
 }
 
