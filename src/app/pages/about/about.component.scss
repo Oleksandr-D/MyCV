@@ -10,3 +10,54 @@
    align-items: center;
    justify-content: center;
 }
+ section {
+   display: flex;
+ }
+.photo{
+   display: flex;
+   width: 50%;
+   justify-content: center;
+   img{
+      width: 50%;
+      background-size: cover;
+   }
+}
+.wraper-about{
+   width: 50%;
+   position: relative;
+   p{
+      width: 20%;
+      height: 10%;
+      position: absolute;
+      left: 118px;
+      top: 98px;
+      right: 0px;
+     bottom: 0px;
+      text-transform: uppercase;
+      padding-left: 10px;
+      color: #f6483b;
+   }
+}
+
+.wraper-about h1{
+   font-size: 40px;
+   text-transform: uppercase;
+   position: relative;
+   padding-bottom: 15px;
+   margin-top: 50px;
+}
+
+.wraper-about h1:after {
+   content: "";
+   position: absolute;
+   background-color: $main-text-color;
+   width: 120px;
+   height: 2px;
+   top: 100%;
+   left: 0;
+}
+
+.about-info{
+   width: 70%;
+   margin: 50px 0px;
+}

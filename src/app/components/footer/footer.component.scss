@@ -17,11 +17,13 @@ footer {
   justify-content: center;
 }
 
-.data p a{
-  transition-duration: 0.3s ;
+.data a{
+  transition-duration: 0.5s ;
 }
-.data p a:hover{
-  text-shadow: 0px 0px 5px  $main-text-color;
+.data a:hover{
+  transition-duration: 0.5s ;
+  text-shadow: 0px 0px 10px  $main-text-color;
+  transform: scaleX(1.1);
 }
 .social {
   width: 50%;
