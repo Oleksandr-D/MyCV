@@ -1,127 +1,138 @@
 @import'../../shared/styles/variables';
 
-.container{
-   width: 100%;
-   height: 600px;
-   font-family: $main-font;
-   background-color: $main-color;
-   color:$main-text-color;
-   display:flex;
-   align-items: center;
-   justify-content: center;
-}
- section {
-   display: flex;
- }
-.photo{
-   display: flex;
-   width: 50%;
-   justify-content: center;
-   img{
-      width: 50%;
-      background-size: cover;
-   }
-}
-.wraper-about{
-   width: 50%;
-   position: relative;
-   p{
-      width: 20%;
-      height: 10%;
-      position: absolute;
-      left: 118px;
-      top: 98px;
-      right: 0px;
-     bottom: 0px;
-      text-transform: uppercase;
-      padding-left: 10px;
-      color: #f6483b;
-   }
+.container {
+  width: 100%;
+  height: 600px;
+  font-family: $main-font;
+  background-color: $main-color;
+  color: $main-text-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.wraper-about h1{
-   font-size: 40px;
-   text-transform: uppercase;
-   position: relative;
-   padding-bottom: 15px;
-   margin-top: 50px;
+section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.photo {
+  display: flex;
+  width: 35%;
+  p {
+    background-image: url('../../../assets/Images/4а.jpg');
+    opacity: 0.9;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    box-shadow: inset 0vw 0vw 2vw 2vw $main-color;
+    clip-path: polygon(-12% 12%, 87% 6%, 69% 89%, 18% 76%);
+    background-position: -24px 4px;
+  }
+}
+
+.wraper-about {
+  width: 35%;
+  position: relative;
+
+  p {
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    left: 118px;
+    top: 98px;
+    right: 0px;
+    bottom: 0px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    color: #f6483b;
+  }
+}
+
+.wraper-about h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 15px;
+  margin-top: 50px;
 }
 
 .wraper-about h1:after {
-   content: "";
-   position: absolute;
-   background-color: $main-text-color;
-   width: 120px;
-   height: 2px;
-   top: 100%;
-   left: 0;
+  content: "";
+  position: absolute;
+  background-color: $main-text-color;
+  width: 120px;
+  height: 2px;
+  top: 100%;
+  left: 0;
 }
 
-.about-info{
-   width: 70%;
-   margin: 50px 0px;
+.about-info {
+  margin: 50px 0px;
 }
+
 //Button
-.btn {		
-   width: 33%;
-   height: 50px;
-   line-height: 40px;
-   box-shadow: 0px 0px 20px 0px rgb(100, 100, 100);
-   text-align: center;
-	position: relative;	
-	padding: 5px;
-	font-size: 12px;
-	color: $main-text-color;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
-	cursor: pointer;
-	user-select: none;
+.btn {
+  width: 33%;
+  height: 50px;
+  line-height: 40px;
+  box-shadow: 0px 0px 20px 0px rgb(100, 100, 100);
+  text-align: center;
+  position: relative;
+  padding: 5px;
+  font-size: 12px;
+  color: $main-text-color;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  user-select: none;
 }
 
-.btn:before, .btn:after {
-	content: '';
-	position: absolute;	
-	transition: inherit;
-	z-index: -1;
+.btn:before,
+.btn:after {
+  content: '';
+  position: absolute;
+  transition: inherit;
+  z-index: -1;
 }
 
 .btn:hover {
-	color:black;
-	transition-delay: 0.5s;
-    z-index: 1;
+  color: black;
+  transition-delay: 0.5s;
+  z-index: 1;
 }
 
 .btn:hover:before {
-	transition-delay: 0s;
+  transition-delay: 0s;
 }
 
 .btn:hover:after {
-	background: $main-text-color;
-	transition-delay: .35s;
-  
+  background: $main-text-color;
+  transition-delay: .35s;
+
 }
 
-.from-right:before, 
+.from-right:before,
 .from-right:after {
-	top: 0;
-	width: 0;
-	height: 100%;
+  top: 0;
+  width: 0;
+  height: 100%;
 }
 
 .from-right:before {
-	left: 0;
-	border: 1px solid $main-text-color;
-	border-left: 0;
-	border-right: 0;	
-   z-index: 1;
+  left: 0;
+  border: 1px solid $main-text-color;
+  border-left: 0;
+  border-right: 0;
+  z-index: 1;
 }
 
 .from-right:after {
-	right: 0;
+  right: 0;
 }
 
 .from-right:hover:before,
 .from-right:hover:after {
-	width: 100%;
+  width: 100%;
 }
