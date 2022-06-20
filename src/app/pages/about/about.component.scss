@@ -5,12 +5,12 @@
   font-family: $main-font;
   background-color: $main-color;
   color: $main-text-color;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 }
 
-section {
+.aboutme-section {
   display: flex;
   justify-content: space-evenly;
 }
@@ -18,6 +18,7 @@ section {
 .photo {
   display: flex;
   width: 35%;
+
   p {
     background-image: url('../../../assets/Images/4а.jpg');
     opacity: 0.9;
@@ -34,39 +35,36 @@ section {
   width: 35%;
   position: relative;
 
+  p {
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    left: 118px;
+    top: 98px;
+    right: 0px;
+    bottom: 0px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    color: #f6483b;
+  }
 
-}
+  h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 15px;
+    margin-top: 50px;
+  }
 
-.wraper-about p,
-.education-section p {
-  width: 20%;
-  height: 10%;
-  position: absolute;
-  left: 118px;
-  top: 98px;
-  right: 0px;
-  bottom: 0px;
-  text-transform: uppercase;
-  padding-left: 10px;
-  color: #f6483b;
-}
-
- h1 {
-  font-size: 40px;
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 15px;
-  margin-top: 50px;
-}
-
- h1:after {
-  content: "";
-  position: absolute;
-  background-color: $main-text-color;
-  width: 120px;
-  height: 2px;
-  top: 100%;
-  left: 0;
+  h1:after {
+    content: "";
+    position: absolute;
+    background-color: $main-text-color;
+    width: 120px;
+    height: 2px;
+    top: 100%;
+    left: 0;
+  }
 }
 
 .about-info {
@@ -137,6 +135,116 @@ section {
 .from-right:hover:after {
   width: 100%;
 }
-.education-section{
+
+.education-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-header {
   position: relative;
+  margin: auto;
+
+  p {
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    left: 118px;
+    top: 48px;
+    right: 0px;
+    bottom: 0px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    color: #f6483b;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 15px;
+  }
+
+  h1:after {
+    content: "";
+    position: absolute;
+    background-color: $main-text-color;
+    width: 120px;
+    height: 2px;
+    top: 100%;
+    left: 0;
+  }
+}
+
+.education-data {
+  width: 80%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.education-rows {
+  width: 50%;
+  margin-left: 50%;
+}
+
+.education-rows::after {
+  content: "";
+  position: absolute;
+  background-color: $main-text-color;
+  width: 2px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+}
+
+.educationbox-right {
+  display: flex;
+  margin-left: 15px;
+  position: relative;
+}
+
+.educationbox-right::after {
+  content: "";
+  position: absolute;
+  background-color: $main-text-color;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  border: 3px solid $main-color;
+  top: 47%;
+  left: -22.5px;
+  transition: 0.3s;
+}
+.educationbox-right:hover::after{
+  border: 3px solid #f6483b;
+  background-color: $main-color;
+  z-index: 1;
+}
+
+.educationbox-year {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    font-size: 40px;
+    transition: all 0.5s;
+  }
+
+  h1:hover {
+    transform: scale(1.1);
+    color: #f6483b;
+  }
+}
+
+.educationbox-info {
+  padding: 0px 40px;
+
+  h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
 }
