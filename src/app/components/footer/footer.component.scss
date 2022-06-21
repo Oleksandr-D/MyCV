@@ -1,10 +1,11 @@
 @import'../../shared/styles/_variables.scss';
 
 footer {
-  height: 10vh;
+  height: 15vh;
   background-color: $main-color;
   font-family: $main-fontBold;
-  padding: 5px 50px;
+  padding: 0px 50px;
+  margin-bottom: 40px;
   display: flex;
   color:$main-text-color;
 }
@@ -153,4 +154,7 @@ ul li a:hover span:nth-child(4) {
 
 .github:hover {
   background: #4f4f4f
+}
+.spacer-30{
+  height: 50px;
 }
