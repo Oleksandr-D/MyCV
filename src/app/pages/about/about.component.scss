@@ -402,7 +402,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 400px;
+    height: 450px;
 
   }
 
@@ -441,10 +441,14 @@
     }
   }
 
+  .btn {
+    margin-bottom: 100px;
+  }
+
   .mobil-about {
     width: 100%;
     position: absolute;
-    bottom: -200px;
+    top: 300px;
   }
 
   .education-section {
@@ -474,6 +478,17 @@
 
   .experiancebox-year {
     display: none;
+  }
+
+}
+
+@media screen and (max-width: 427px) {
+  .container {
+    font-size: 14px;
+  }
+
+  .education-data {
+    width: 90%;
   }
 
 }

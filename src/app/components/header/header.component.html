@@ -1,6 +1,16 @@
-<header>
-   <h3><a [routerLink]="['/']">LOGO</a></h3>
-  <nav>
+<header class="desktop-header">
+  <h3><a [routerLink]="['/']">LOGO</a></h3>
+  <nav class="desktop-nav">
+    <ul>
+      <li><a [routerLink]="['/']">Home</a></li>
+      <li><a [routerLink]="['/work']">Work</a></li>
+      <li><a [routerLink]="['/about']">About</a></li>
+      <li><a [routerLink]="['/contact']">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<header class="mobile-header">
+  <nav class="mobile-nav">
     <ul>
       <li><a [routerLink]="['/']">Home</a></li>
       <li><a [routerLink]="['/work']">Work</a></li>
