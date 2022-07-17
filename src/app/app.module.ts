@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { AboutService} from '../app/shared/services/about/about.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,7 +28,7 @@ import { WorkComponent } from './pages/work/work.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AboutService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
